@@ -1,0 +1,14 @@
+.outerNode{
+	width: 540px;
+	height: 332px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -166px 0 0 -270px;
+	box-shadow: 0 0 4px #5b606d;
+}
+.outerNode .videoNode{
+	width: 100%;
+	height: 305px;
+	float: left;
+}
