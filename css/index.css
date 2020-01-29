@@ -20,10 +20,18 @@
 }
 .outerNode .controlsNode .playNode{
 	float: left;
-	width: 13px;
-	height: 15px;
+	width: 15px;
+	height: 17px;
 	margin: 6px 0 0 14px;
 	background: url(../images/playNode.png) no-repeat;
+	cursor: pointer;
+}
+.outerNode .controlsNode .pauseNode{
+	float: left;
+	width: 15px;
+	height: 17px;
+	margin: 6px 0 0 14px;
+	background: url(../images/pause.png) no-repeat;
 	cursor: pointer;
 }
 .outerNode .controlsNode .loadNode{
