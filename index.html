@@ -7,8 +7,38 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
+	<!--最外层的元素-->
 	<div class="outerNode">
-		<video class="videoNode"></video>
+		<!--video播放器元素-->
+		<video class="videoNode" src="data/video2020.mp4" poster="data/demo.png"></video>
+		<!--控制器元素-->
+		<div class="controlsNode">
+			<!--控制播放器播放暂停按钮-->
+			<div class="playNode"></div>
+			<!--video进度条-->
+			<div class="loadNode">
+				<div class="loadLeft"></div>
+				<div class="loadRight"></div>
+				<!--拖动进度条的按钮-->
+				<div class="crlNode"></div>
+			</div>
+			<!--时间元素-->
+			<div class="timeNode">
+				<span class="now">1:30</span>
+				<span>-</span>
+				<span class="all">4:30</span>
+			</div>
+			<!--声音元素-->
+			<div class="volumeNode"></div>
+			<!--声音进度条-->
+			<div class="volumeLine">
+				<div class="v_left"></div>
+				<div class="v_right"></div>
+				<div class="v_dragNode"></div>
+			</div>
+			<!--全屏-->
+			<div class="fullNode"></div>
+		</div>
 	</div>
 </body>
 </html>
