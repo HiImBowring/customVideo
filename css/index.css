@@ -39,7 +39,7 @@
 	height: 10px;
 	margin: 9px 0 0 14px;
 	float: left;
-	background: url(../images/load_bg.gif) repeat-x;
+	background: url(../images/load_bg.png) repeat-x;
 	position:relative; 
 }
 .outerNode .controlsNode .loadNode .loadLeft{
@@ -49,6 +49,7 @@
 	left: 0;
 	top: 0;
 	background: url(../images/left_bg.png) no-repeat;
+	z-index:4;
 }
 .outerNode .controlsNode .loadNode .loadRight{
 	height: 100%;
@@ -66,10 +67,27 @@
 	left: -8.5px;
 	top: -3.5px;
 	cursor: pointer;
+	z-index: 5;
+}
+.outerNode .controlsNode .loadNode .lineNode{
+	width: 0%;
+	height: 7px;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	background: url(../images/line_bg.png) repeat-x;
+}
+.outerNode .controlsNode .loadNode .lineNode .lineRight{
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(../images/line_r_bg.png) no-repeat;
 }
 .outerNode .controlsNode .timeNode{
 	float: left;
-	width: 55px;
+	width: 75px;
 	height: 10px;
 	margin: 9px 0 0 9px;
 
@@ -84,7 +102,7 @@
 	width: 17px;
 	height: 16px;
 	float: left;
-	margin: 5px 0 0 16px;
+	margin: 5px 0 0 6px;
 	background: url(../images/volume_bg.png);
 }
 .outerNode .controlsNode .volumeLine{
@@ -116,7 +134,7 @@
 	height: 13px;
 	position: absolute;
 	top: -2.5px;
-	left: -2.5;
+	left: 58.5px;
 	background: url(../images/vo_d.png);
 	cursor: pointer;
 }
@@ -124,7 +142,11 @@
 	width: 15px;
 	height: 17px;
 	float: left;
-	margin: 6px 0 0 50px;
-	background: url(../images/full_bg.png);
+	margin: 6px 0 0 35px;
+	background: url(../images/full_bg.png) no-repeat;
 	cursor: pointer;
+	transition: 0.7s;
+}
+.outerNode .controlsNode .fullNode:hover{
+	background: url(../images/full_hover_bg.png) no-repeat;
 }
